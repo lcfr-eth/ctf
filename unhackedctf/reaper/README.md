@@ -1,3 +1,31 @@
+# solution - LCFR
+
+```
+wasted much time on trying to find a way to programatically read storage of balance mapping to do this automated. :(
+
+Vulnerable Function: 
+
+function withdraw(uint256 assets, address receiver, address owner) external nonReentrant returns (uint256 shares) {
+        require(assets != 0, "please provide amount");
+        shares = previewWithdraw(assets);
+        _withdraw(assets, shares, receiver, owner);
+        return shares;
+}
+
+function _withdraw(uint256 assets, uint256 shares, address receiver, address owner) internal returns (uint256) {
+        _burn(owner, shares); // [0] LCFR
+        ...
+        return assets;
+}
+```
+
+no validation on msg.sender == owner == rekt
+
+files: 
+test/ReaperHack.t.sol - main foundry exploit testcase
+reapDeposits.py - an attempt to programattically find all depositors from when deposits started to automatically clear all the contracts held funds.
+
+
 ## welcome to unhacked
 
 _unhacked_ is a weekly ctf, giving whitehats the chance to go back in time before real exploits and recover funds before the bad guys get them. 
