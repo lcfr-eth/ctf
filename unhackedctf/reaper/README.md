@@ -1,10 +1,9 @@
 # solution - LCFR
 
-```
 wasted much time on trying to find a way to programatically read storage of balance mapping to do this automated. :(
 
 Vulnerable Function: 
-
+```bash
 function withdraw(uint256 assets, address receiver, address owner) external nonReentrant returns (uint256 shares) {
         require(assets != 0, "please provide amount");
         shares = previewWithdraw(assets);
@@ -23,6 +22,7 @@ no validation on msg.sender == owner == rekt
 
 files: 
 test/ReaperHack.t.sol - main foundry exploit testcase
+
 reapDeposits.py - an attempt to programattically find all depositors from when deposits started to automatically clear all the contracts held funds.
 
 
