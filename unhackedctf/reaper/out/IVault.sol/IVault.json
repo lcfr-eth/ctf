@@ -1,0 +1,774 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "availableCapital",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "shares",
+          "type": "uint256"
+        }
+      ],
+      "name": "convertToAssets",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "roi",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "repayment",
+          "type": "uint256"
+        }
+      ],
+      "name": "report",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "strategy",
+          "type": "address"
+        }
+      ],
+      "name": "revokeStrategy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "strategy",
+          "type": "address"
+        }
+      ],
+      "name": "strategies",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "activation",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "allocBPS",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "allocated",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "gains",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "losses",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastReport",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IVault.StrategyParams",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "availableCapital()": "199cb7d8",
+    "convertToAssets(uint256)": "07a2d13a",
+    "report(int256,uint256)": "0f3d249d",
+    "revokeStrategy(address)": "bb994d48",
+    "strategies(address)": "39ebf823"
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IVault.sol",
+    "id": 34621,
+    "exportedSymbols": {
+      "IVault": [
+        34620
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:2072:56",
+    "nodes": [
+      {
+        "id": 34569,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:56",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 34620,
+        "nodeType": "ContractDefinition",
+        "src": "58:2046:56",
+        "nodes": [
+          {
+            "id": 34582,
+            "nodeType": "StructDefinition",
+            "src": "81:468:56",
+            "canonicalName": "IVault.StrategyParams",
+            "members": [
+              {
+                "constant": false,
+                "id": 34571,
+                "mutability": "mutable",
+                "name": "activation",
+                "nameLocation": "121:10:56",
+                "nodeType": "VariableDeclaration",
+                "scope": 34582,
+                "src": "113:18:56",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 34570,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "113:7:56",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 34573,
+                "mutability": "mutable",
+                "name": "allocBPS",
+                "nameLocation": "179:8:56",
+                "nodeType": "VariableDeclaration",
+                "scope": 34582,
+                "src": "171:16:56",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 34572,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "171:7:56",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 34575,
+                "mutability": "mutable",
+                "name": "allocated",
+                "nameLocation": "250:9:56",
+                "nodeType": "VariableDeclaration",
+                "scope": 34582,
+                "src": "242:17:56",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 34574,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "242:7:56",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 34577,
+                "mutability": "mutable",
+                "name": "gains",
+                "nameLocation": "325:5:56",
+                "nodeType": "VariableDeclaration",
+                "scope": 34582,
+                "src": "317:13:56",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 34576,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "317:7:56",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 34579,
+                "mutability": "mutable",
+                "name": "losses",
+                "nameLocation": "402:6:56",
+                "nodeType": "VariableDeclaration",
+                "scope": 34582,
+                "src": "394:14:56",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 34578,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "394:7:56",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 34581,
+                "mutability": "mutable",
+                "name": "lastReport",
+                "nameLocation": "479:10:56",
+                "nodeType": "VariableDeclaration",
+                "scope": 34582,
+                "src": "471:18:56",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 34580,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "471:7:56",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "StrategyParams",
+            "nameLocation": "88:14:56",
+            "scope": 34620,
+            "visibility": "public"
+          },
+          {
+            "id": 34589,
+            "nodeType": "FunctionDefinition",
+            "src": "555:73:56",
+            "functionSelector": "07a2d13a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "convertToAssets",
+            "nameLocation": "564:15:56",
+            "parameters": {
+              "id": 34585,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34584,
+                  "mutability": "mutable",
+                  "name": "shares",
+                  "nameLocation": "588:6:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34589,
+                  "src": "580:14:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34583,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "580:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "579:16:56"
+            },
+            "returnParameters": {
+              "id": 34588,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34587,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34589,
+                  "src": "619:7:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34586,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "619:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "618:9:56"
+            },
+            "scope": 34620,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 34597,
+            "nodeType": "FunctionDefinition",
+            "src": "634:84:56",
+            "functionSelector": "39ebf823",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "strategies",
+            "nameLocation": "643:10:56",
+            "parameters": {
+              "id": 34592,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34591,
+                  "mutability": "mutable",
+                  "name": "strategy",
+                  "nameLocation": "662:8:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34597,
+                  "src": "654:16:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34590,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "654:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "653:18:56"
+            },
+            "returnParameters": {
+              "id": 34596,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34595,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34597,
+                  "src": "695:21:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_StrategyParams_$34582_memory_ptr",
+                    "typeString": "struct IVault.StrategyParams"
+                  },
+                  "typeName": {
+                    "id": 34594,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 34593,
+                      "name": "StrategyParams",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 34582,
+                      "src": "695:14:56"
+                    },
+                    "referencedDeclaration": 34582,
+                    "src": "695:14:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_StrategyParams_$34582_storage_ptr",
+                      "typeString": "struct IVault.StrategyParams"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "694:23:56"
+            },
+            "scope": 34620,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 34603,
+            "nodeType": "FunctionDefinition",
+            "src": "1031:59:56",
+            "documentation": {
+              "id": 34598,
+              "nodeType": "StructuredDocumentation",
+              "src": "724:302:56",
+              "text": " @notice Called by a strategy to determine the amount of capital that the vault is\n able to provide it. A positive amount means that vault has excess capital to provide\n the strategy, while a negative amount means that the strategy has a balance owing to\n the vault."
+            },
+            "functionSelector": "199cb7d8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "availableCapital",
+            "nameLocation": "1040:16:56",
+            "parameters": {
+              "id": 34599,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1056:2:56"
+            },
+            "returnParameters": {
+              "id": 34602,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34601,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34603,
+                  "src": "1082:6:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 34600,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1082:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1081:8:56"
+            },
+            "scope": 34620,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 34613,
+            "nodeType": "FunctionDefinition",
+            "src": "1383:74:56",
+            "documentation": {
+              "id": 34604,
+              "nodeType": "StructuredDocumentation",
+              "src": "1096:282:56",
+              "text": " This is the main contact point where the Strategy interacts with the\n Vault. It is critical that this call is handled as intended by the\n Strategy. Therefore, this function will be called by BaseStrategy to\n make sure the integration is correct."
+            },
+            "functionSelector": "0f3d249d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "report",
+            "nameLocation": "1392:6:56",
+            "parameters": {
+              "id": 34609,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34606,
+                  "mutability": "mutable",
+                  "name": "roi",
+                  "nameLocation": "1406:3:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34613,
+                  "src": "1399:10:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 34605,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1399:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34608,
+                  "mutability": "mutable",
+                  "name": "repayment",
+                  "nameLocation": "1419:9:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34613,
+                  "src": "1411:17:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34607,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1411:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1398:31:56"
+            },
+            "returnParameters": {
+              "id": 34612,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34611,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34613,
+                  "src": "1448:7:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34610,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1448:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1447:9:56"
+            },
+            "scope": 34620,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 34619,
+            "nodeType": "FunctionDefinition",
+            "src": "2051:51:56",
+            "documentation": {
+              "id": 34614,
+              "nodeType": "StructuredDocumentation",
+              "src": "1463:583:56",
+              "text": " This function should only be used in the scenario where the Strategy is\n being retired but no migration of the positions are possible, or in the\n extreme scenario that the Strategy needs to be put into \"Emergency Exit\"\n mode in order for it to exit as quickly as possible. The latter scenario\n could be for any reason that is considered \"critical\" that the Strategy\n exits its position as fast as possible, such as a sudden change in\n market conditions leading to losses, or an imminent failure in an\n external dependency."
+            },
+            "functionSelector": "bb994d48",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "revokeStrategy",
+            "nameLocation": "2060:14:56",
+            "parameters": {
+              "id": 34617,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34616,
+                  "mutability": "mutable",
+                  "name": "strategy",
+                  "nameLocation": "2083:8:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34619,
+                  "src": "2075:16:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34615,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2075:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2074:18:56"
+            },
+            "returnParameters": {
+              "id": 34618,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2101:0:56"
+            },
+            "scope": 34620,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVault",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          34620
+        ],
+        "name": "IVault",
+        "nameLocation": "68:6:56",
+        "scope": 34621,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 56
+}

@@ -1,0 +1,193 @@
+{
+  "compiler": {
+    "version": "0.8.11+commit.d7f03943"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "holder",
+            "type": "address"
+          },
+          {
+            "internalType": "contract CTokenI[]",
+            "name": "_scTokens",
+            "type": "address[]"
+          }
+        ],
+        "name": "claimComp",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "holder",
+            "type": "address"
+          }
+        ],
+        "name": "claimComp",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "name": "compAccrued",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "ctoken",
+            "type": "address"
+          }
+        ],
+        "name": "compSpeeds",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address[]",
+            "name": "_scTokens",
+            "type": "address[]"
+          }
+        ],
+        "name": "enterMarkets",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "ctoken",
+            "type": "address"
+          }
+        ],
+        "name": "markets",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "pendingComptrollerImplementation",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "implementation",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "src/interfaces/IComptroller.sol": "IComptroller"
+    },
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ]
+  },
+  "sources": {
+    "src/interfaces/CTokenI.sol": {
+      "keccak256": "0x09b617eaa7d66e29e1009989a1fa2883065538418c0ca3aecb6cc6c7fc2934a6",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://b6396d379e45190856ea34913f607284d10f558da28dbeb8bbe46a6df09f50ae",
+        "dweb:/ipfs/QmVsGd23Wdo7kWP4VN6i45swkDoQJNtZMaP567b18QKMsP"
+      ]
+    },
+    "src/interfaces/IComptroller.sol": {
+      "keccak256": "0x8e3d3579c5fea27c7f7e5a1f55faed144121cea24bdd6228aab8be3d342e488f",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://618368e27aeabd97058bccfc609fb5183b72c1a37e5e29ab9af3fe95a40a92da",
+        "dweb:/ipfs/QmZGR1Vx6YWY3JqN4QFDNhrCEpda5LPkkZ9nSAm2i3NxLL"
+      ]
+    },
+    "src/interfaces/InterestRateModel.sol": {
+      "keccak256": "0xc751fdf6e558d6d8a52b345d756fd44c864a7b7bdb320df4d569f2721fedea51",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://6f3333550032ff54210ab632039bb0e5f388ecfb99f0ec3a3f54d55c6af95a7d",
+        "dweb:/ipfs/QmdYRZXFiztvzCProiv7eB5fCDJBS6PmV3UQ7ns3WRShE6"
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,2235 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "balanceOf(address)": "70a08231"
+  },
+  "ast": {
+    "absolutePath": "test/ReaperHack.t.sol",
+    "id": 27402,
+    "exportedSymbols": {
+      "AccessControl": [
+        21878
+      ],
+      "AccessControlEnumerable": [
+        22003
+      ],
+      "Address": [
+        23492
+      ],
+      "Context": [
+        23514
+      ],
+      "CounterTest": [
+        27401
+      ],
+      "DSTest": [
+        1786
+      ],
+      "ERC165": [
+        23764
+      ],
+      "ERC20": [
+        22742
+      ],
+      "EnumerableSet": [
+        24893
+      ],
+      "FixedPointMathLib": [
+        27252
+      ],
+      "IAccessControl": [
+        22076
+      ],
+      "IAccessControlEnumerable": [
+        22101
+      ],
+      "IERC165": [
+        23776
+      ],
+      "IERC20": [
+        22820
+      ],
+      "IERC20Like": [
+        27264
+      ],
+      "IERC20Metadata": [
+        22845
+      ],
+      "IERC20Permit": [
+        22881
+      ],
+      "IERC4626": [
+        27103
+      ],
+      "IStrategy": [
+        27133
+      ],
+      "Math": [
+        24280
+      ],
+      "ReaperVaultV2": [
+        26958
+      ],
+      "ReentrancyGuard": [
+        22155
+      ],
+      "SafeERC20": [
+        23162
+      ],
+      "Script": [
+        2022
+      ],
+      "StdStorage": [
+        3554
+      ],
+      "Strings": [
+        23740
+      ],
+      "Test": [
+        3456
+      ],
+      "Vm": [
+        5434
+      ],
+      "console": [
+        13498
+      ],
+      "console2": [
+        21562
+      ],
+      "stdError": [
+        3526
+      ],
+      "stdMath": [
+        4795
+      ],
+      "stdStorage": [
+        4656
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1480:27",
+    "nodes": [
+      {
+        "id": 27254,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:27",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 27255,
+        "nodeType": "ImportDirective",
+        "src": "64:28:27",
+        "absolutePath": "lib/forge-std/src/Test.sol",
+        "file": "forge-std/Test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 27402,
+        "sourceUnit": 4796,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 27256,
+        "nodeType": "ImportDirective",
+        "src": "93:34:27",
+        "absolutePath": "src/ReaperVaultV2.sol",
+        "file": "../src/ReaperVaultV2.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 27402,
+        "sourceUnit": 26959,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 27264,
+        "nodeType": "ContractDefinition",
+        "src": "129:92:27",
+        "nodes": [
+          {
+            "id": 27263,
+            "nodeType": "FunctionDefinition",
+            "src": "156:63:27",
+            "functionSelector": "70a08231",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceOf",
+            "nameLocation": "165:9:27",
+            "parameters": {
+              "id": 27259,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27258,
+                  "mutability": "mutable",
+                  "name": "_addr",
+                  "nameLocation": "183:5:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 27263,
+                  "src": "175:13:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 27257,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "175:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "174:15:27"
+            },
+            "returnParameters": {
+              "id": 27262,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27261,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 27263,
+                  "src": "213:4:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 27260,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "213:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "212:6:27"
+            },
+            "scope": 27264,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IERC20Like",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          27264
+        ],
+        "name": "IERC20Like",
+        "nameLocation": "139:10:27",
+        "scope": 27402,
+        "usedErrors": []
+      },
+      {
+        "id": 27401,
+        "nodeType": "ContractDefinition",
+        "src": "223:1295:27",
+        "nodes": [
+          {
+            "id": 27272,
+            "nodeType": "VariableDeclaration",
+            "src": "258:80:27",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "reaper",
+            "nameLocation": "272:6:27",
+            "scope": 27401,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+              "typeString": "contract ReaperVaultV2"
+            },
+            "typeName": {
+              "id": 27268,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 27267,
+                "name": "ReaperVaultV2",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 26958,
+                "src": "258:13:27"
+              },
+              "referencedDeclaration": 26958,
+              "src": "258:13:27",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                "typeString": "contract ReaperVaultV2"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "hexValue": "307837376463333364433032373864323133393863623962313643624666393963314237313261383741",
+                  "id": 27270,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "295:42:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "value": "0x77dc33dC0278d21398cb9b16CbFf99c1B712a87A"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                ],
+                "id": 27269,
+                "name": "ReaperVaultV2",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 26958,
+                "src": "281:13:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_ReaperVaultV2_$26958_$",
+                  "typeString": "type(contract ReaperVaultV2)"
+                }
+              },
+              "id": 27271,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "281:57:27",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                "typeString": "contract ReaperVaultV2"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 27278,
+            "nodeType": "VariableDeclaration",
+            "src": "344:77:27",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "fantomDai",
+            "nameLocation": "355:9:27",
+            "scope": 27401,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IERC20Like_$27264",
+              "typeString": "contract IERC20Like"
+            },
+            "typeName": {
+              "id": 27274,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 27273,
+                "name": "IERC20Like",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 27264,
+                "src": "344:10:27"
+              },
+              "referencedDeclaration": 27264,
+              "src": "344:10:27",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20Like_$27264",
+                "typeString": "contract IERC20Like"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "hexValue": "307838443131654333386133454235453935364230353266363744613842646339626566384162663345",
+                  "id": 27276,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "378:42:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "value": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                ],
+                "id": 27275,
+                "name": "IERC20Like",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 27264,
+                "src": "367:10:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_IERC20Like_$27264_$",
+                  "typeString": "type(contract IERC20Like)"
+                }
+              },
+              "id": 27277,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "367:54:27",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20Like_$27264",
+                "typeString": "contract IERC20Like"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 27400,
+            "nodeType": "FunctionDefinition",
+            "src": "428:1088:27",
+            "body": {
+              "id": 27399,
+              "nodeType": "Block",
+              "src": "461:1055:27",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "hexValue": "46414e544f4d5f525043",
+                            "id": 27286,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "504:12:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_stringliteral_4494a696d092d596d8ced26423cc6f57123974283ef7dc225fa1db2245a3c0e0",
+                              "typeString": "literal_string \"FANTOM_RPC\""
+                            },
+                            "value": "FANTOM_RPC"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_stringliteral_4494a696d092d596d8ced26423cc6f57123974283ef7dc225fa1db2245a3c0e0",
+                              "typeString": "literal_string \"FANTOM_RPC\""
+                            }
+                          ],
+                          "expression": {
+                            "id": 27284,
+                            "name": "vm",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1817,
+                            "src": "491:2:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Vm_$5434",
+                              "typeString": "contract Vm"
+                            }
+                          },
+                          "id": 27285,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "envString",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 4938,
+                          "src": "491:12:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
+                            "typeString": "function (string memory) external returns (string memory)"
+                          }
+                        },
+                        "id": 27287,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "491:26:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "hexValue": "3434303030303030",
+                        "id": 27288,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "519:8:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_44000000_by_1",
+                          "typeString": "int_const 44000000"
+                        },
+                        "value": "44000000"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_44000000_by_1",
+                          "typeString": "int_const 44000000"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27281,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1817,
+                        "src": "471:2:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$5434",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 27283,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "createSelectFork",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5321,
+                      "src": "471:19:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (string memory,uint256) external returns (uint256)"
+                      }
+                    },
+                    "id": 27289,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "471:57:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 27290,
+                  "nodeType": "ExpressionStatement",
+                  "src": "471:57:27"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "596f7572205374617274696e672042616c616e63653a",
+                        "id": 27294,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "550:24:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_84fb897c80a329436dcf1c86f3897399eb943679411c3b5e63d7aa9b6e36fff3",
+                          "typeString": "literal_string \"Your Starting Balance:\""
+                        },
+                        "value": "Your Starting Balance:"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 27299,
+                                "name": "this",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -28,
+                                "src": "604:4:27",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_CounterTest_$27401",
+                                  "typeString": "contract CounterTest"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_contract$_CounterTest_$27401",
+                                  "typeString": "contract CounterTest"
+                                }
+                              ],
+                              "id": 27298,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "596:7:27",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_address_$",
+                                "typeString": "type(address)"
+                              },
+                              "typeName": {
+                                "id": 27297,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "596:7:27",
+                                "typeDescriptions": {}
+                              }
+                            },
+                            "id": 27300,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "596:13:27",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "expression": {
+                            "id": 27295,
+                            "name": "fantomDai",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27278,
+                            "src": "576:9:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IERC20Like_$27264",
+                              "typeString": "contract IERC20Like"
+                            }
+                          },
+                          "id": 27296,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "balanceOf",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 27263,
+                          "src": "576:19:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                            "typeString": "function (address) view external returns (uint256)"
+                          }
+                        },
+                        "id": 27301,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "576:34:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_84fb897c80a329436dcf1c86f3897399eb943679411c3b5e63d7aa9b6e36fff3",
+                          "typeString": "literal_string \"Your Starting Balance:\""
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27291,
+                        "name": "console",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13498,
+                        "src": "538:7:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console_$13498_$",
+                          "typeString": "type(library console)"
+                        }
+                      },
+                      "id": 27293,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6142,
+                      "src": "538:11:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 27302,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "538:73:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27303,
+                  "nodeType": "ExpressionStatement",
+                  "src": "538:73:27"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "hexValue": "307845423761313266453136394339383734384542323043453832383645416343463438373636343362",
+                            "id": 27309,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "665:42:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            "value": "0xEB7a12fE169C98748EB20CE8286EAcCF4876643b"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "expression": {
+                            "id": 27307,
+                            "name": "reaper",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27272,
+                            "src": "646:6:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                              "typeString": "contract ReaperVaultV2"
+                            }
+                          },
+                          "id": 27308,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "maxWithdraw",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 25562,
+                          "src": "646:18:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                            "typeString": "function (address) view external returns (uint256)"
+                          }
+                        },
+                        "id": 27310,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "646:62:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 27313,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "718:4:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          ],
+                          "id": 27312,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "710:7:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 27311,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "710:7:27",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 27314,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "710:13:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "307845423761313266453136394339383734384542323043453832383645416343463438373636343362",
+                        "id": 27315,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "725:42:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "value": "0xEB7a12fE169C98748EB20CE8286EAcCF4876643b"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27304,
+                        "name": "reaper",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27272,
+                        "src": "630:6:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                          "typeString": "contract ReaperVaultV2"
+                        }
+                      },
+                      "id": 27306,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "withdraw",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 25637,
+                      "src": "630:15:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,address,address) external returns (uint256)"
+                      }
+                    },
+                    "id": 27316,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "630:138:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 27317,
+                  "nodeType": "ExpressionStatement",
+                  "src": "630:138:27"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "hexValue": "307830353661626435336135354331383764373338423441393832443336623464466135303633323641",
+                            "id": 27323,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "813:42:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            "value": "0x056abd53a55C187d738B4A982D36b4dFa506326A"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "expression": {
+                            "id": 27321,
+                            "name": "reaper",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27272,
+                            "src": "794:6:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                              "typeString": "contract ReaperVaultV2"
+                            }
+                          },
+                          "id": 27322,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "maxWithdraw",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 25562,
+                          "src": "794:18:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                            "typeString": "function (address) view external returns (uint256)"
+                          }
+                        },
+                        "id": 27324,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "794:62:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 27327,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "866:4:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          ],
+                          "id": 27326,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "858:7:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 27325,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "858:7:27",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 27328,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "858:13:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "307830353661626435336135354331383764373338423441393832443336623464466135303633323641",
+                        "id": 27329,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "873:42:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "value": "0x056abd53a55C187d738B4A982D36b4dFa506326A"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27318,
+                        "name": "reaper",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27272,
+                        "src": "778:6:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                          "typeString": "contract ReaperVaultV2"
+                        }
+                      },
+                      "id": 27320,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "withdraw",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 25637,
+                      "src": "778:15:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,address,address) external returns (uint256)"
+                      }
+                    },
+                    "id": 27330,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "778:138:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 27331,
+                  "nodeType": "ExpressionStatement",
+                  "src": "778:138:27"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "hexValue": "307839353437373364443039613062643730384433433033413632464230393437653830373866436639",
+                            "id": 27337,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "961:42:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            "value": "0x954773dD09a0bd708D3C03A62FB0947e8078fCf9"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "expression": {
+                            "id": 27335,
+                            "name": "reaper",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27272,
+                            "src": "942:6:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                              "typeString": "contract ReaperVaultV2"
+                            }
+                          },
+                          "id": 27336,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "maxWithdraw",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 25562,
+                          "src": "942:18:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                            "typeString": "function (address) view external returns (uint256)"
+                          }
+                        },
+                        "id": 27338,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "942:62:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 27341,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "1014:4:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          ],
+                          "id": 27340,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1006:7:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 27339,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1006:7:27",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 27342,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1006:13:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "307839353437373364443039613062643730384433433033413632464230393437653830373866436639",
+                        "id": 27343,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1021:42:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "value": "0x954773dD09a0bd708D3C03A62FB0947e8078fCf9"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27332,
+                        "name": "reaper",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27272,
+                        "src": "926:6:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                          "typeString": "contract ReaperVaultV2"
+                        }
+                      },
+                      "id": 27334,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "withdraw",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 25637,
+                      "src": "926:15:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,address,address) external returns (uint256)"
+                      }
+                    },
+                    "id": 27344,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "926:138:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 27345,
+                  "nodeType": "ExpressionStatement",
+                  "src": "926:138:27"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "hexValue": "307842353733663031663239303163306442334531344563383043364531326534383638444543383634",
+                            "id": 27351,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1109:42:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            "value": "0xB573f01f2901c0dB3E14Ec80C6E12e4868DEC864"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "expression": {
+                            "id": 27349,
+                            "name": "reaper",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27272,
+                            "src": "1090:6:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                              "typeString": "contract ReaperVaultV2"
+                            }
+                          },
+                          "id": 27350,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "maxWithdraw",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 25562,
+                          "src": "1090:18:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                            "typeString": "function (address) view external returns (uint256)"
+                          }
+                        },
+                        "id": 27352,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1090:62:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 27355,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "1162:4:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          ],
+                          "id": 27354,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1154:7:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 27353,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1154:7:27",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 27356,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1154:13:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "307842353733663031663239303163306442334531344563383043364531326534383638444543383634",
+                        "id": 27357,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1169:42:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "value": "0xB573f01f2901c0dB3E14Ec80C6E12e4868DEC864"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27346,
+                        "name": "reaper",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27272,
+                        "src": "1074:6:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                          "typeString": "contract ReaperVaultV2"
+                        }
+                      },
+                      "id": 27348,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "withdraw",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 25637,
+                      "src": "1074:15:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,address,address) external returns (uint256)"
+                      }
+                    },
+                    "id": 27358,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1074:138:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 27359,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1074:138:27"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "hexValue": "307866633833444137323730333461343837663033316441333344353562343636346261333132663144",
+                            "id": 27365,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1257:42:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            "value": "0xfc83DA727034a487f031dA33D55b4664ba312f1D"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "expression": {
+                            "id": 27363,
+                            "name": "reaper",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27272,
+                            "src": "1238:6:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                              "typeString": "contract ReaperVaultV2"
+                            }
+                          },
+                          "id": 27364,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "maxWithdraw",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 25562,
+                          "src": "1238:18:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                            "typeString": "function (address) view external returns (uint256)"
+                          }
+                        },
+                        "id": 27366,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1238:62:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 27369,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "1310:4:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_CounterTest_$27401",
+                              "typeString": "contract CounterTest"
+                            }
+                          ],
+                          "id": 27368,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1302:7:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 27367,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1302:7:27",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 27370,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1302:13:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "307866633833444137323730333461343837663033316441333344353562343636346261333132663144",
+                        "id": 27371,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1317:42:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "value": "0xfc83DA727034a487f031dA33D55b4664ba312f1D"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27360,
+                        "name": "reaper",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27272,
+                        "src": "1222:6:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ReaperVaultV2_$26958",
+                          "typeString": "contract ReaperVaultV2"
+                        }
+                      },
+                      "id": 27362,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "withdraw",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 25637,
+                      "src": "1222:15:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,address,address) external returns (uint256)"
+                      }
+                    },
+                    "id": 27372,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1222:138:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 27373,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1222:138:27"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "596f75722046696e616c2042616c616e63653a",
+                        "id": 27377,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1383:21:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4def82c5e269d59bf66b94d3cc94e7a86e760ae6897b4400647951e639923821",
+                          "typeString": "literal_string \"Your Final Balance:\""
+                        },
+                        "value": "Your Final Balance:"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 27382,
+                                "name": "this",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -28,
+                                "src": "1434:4:27",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_CounterTest_$27401",
+                                  "typeString": "contract CounterTest"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_contract$_CounterTest_$27401",
+                                  "typeString": "contract CounterTest"
+                                }
+                              ],
+                              "id": 27381,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "1426:7:27",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_address_$",
+                                "typeString": "type(address)"
+                              },
+                              "typeName": {
+                                "id": 27380,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1426:7:27",
+                                "typeDescriptions": {}
+                              }
+                            },
+                            "id": 27383,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "1426:13:27",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "expression": {
+                            "id": 27378,
+                            "name": "fantomDai",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27278,
+                            "src": "1406:9:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IERC20Like_$27264",
+                              "typeString": "contract IERC20Like"
+                            }
+                          },
+                          "id": 27379,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "balanceOf",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 27263,
+                          "src": "1406:19:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                            "typeString": "function (address) view external returns (uint256)"
+                          }
+                        },
+                        "id": 27384,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1406:34:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_4def82c5e269d59bf66b94d3cc94e7a86e760ae6897b4400647951e639923821",
+                          "typeString": "literal_string \"Your Final Balance:\""
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27374,
+                        "name": "console",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13498,
+                        "src": "1371:7:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console_$13498_$",
+                          "typeString": "type(library console)"
+                        }
+                      },
+                      "id": 27376,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6142,
+                      "src": "1371:11:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 27385,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1371:70:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27386,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1371:70:27"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 27396,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "id": 27392,
+                                  "name": "this",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": -28,
+                                  "src": "1486:4:27",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_contract$_CounterTest_$27401",
+                                    "typeString": "contract CounterTest"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_contract$_CounterTest_$27401",
+                                    "typeString": "contract CounterTest"
+                                  }
+                                ],
+                                "id": 27391,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "1478:7:27",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_address_$",
+                                  "typeString": "type(address)"
+                                },
+                                "typeName": {
+                                  "id": 27390,
+                                  "name": "address",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "1478:7:27",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 27393,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "1478:13:27",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "id": 27388,
+                              "name": "fantomDai",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 27278,
+                              "src": "1458:9:27",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IERC20Like_$27264",
+                                "typeString": "contract IERC20Like"
+                              }
+                            },
+                            "id": 27389,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "balanceOf",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 27263,
+                            "src": "1458:19:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                              "typeString": "function (address) view external returns (uint256)"
+                            }
+                          },
+                          "id": 27394,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1458:34:27",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">",
+                        "rightExpression": {
+                          "hexValue": "3430305f303030",
+                          "id": 27395,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1495:13:27",
+                          "subdenomination": "ether",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_400000000000000000000000_by_1",
+                            "typeString": "int_const 400000000000000000000000"
+                          },
+                          "value": "400_000"
+                        },
+                        "src": "1458:50:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 27387,
+                      "name": "assert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -3,
+                      "src": "1451:6:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 27397,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1451:58:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27398,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1451:58:27"
+                }
+              ]
+            },
+            "functionSelector": "5220d77c",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testReaperHack",
+            "nameLocation": "437:14:27",
+            "parameters": {
+              "id": 27279,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "451:2:27"
+            },
+            "returnParameters": {
+              "id": 27280,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:0:27"
+            },
+            "scope": 27401,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 27265,
+              "name": "Test",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3456,
+              "src": "247:4:27"
+            },
+            "id": 27266,
+            "nodeType": "InheritanceSpecifier",
+            "src": "247:4:27"
+          }
+        ],
+        "canonicalName": "CounterTest",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          27401,
+          3456,
+          2022,
+          1786
+        ],
+        "name": "CounterTest",
+        "nameLocation": "232:11:27",
+        "scope": 27402,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 27
+}

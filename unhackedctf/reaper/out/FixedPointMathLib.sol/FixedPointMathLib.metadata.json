@@ -1,0 +1,54 @@
+{
+  "compiler": {
+    "version": "0.8.11+commit.d7f03943"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [],
+    "devdoc": {
+      "author": "Solmate (https://github.com/Rari-Capital/solmate/blob/main/src/utils/FixedPointMathLib.sol)Inspired by USM (https://github.com/usmfum/USM/blob/master/contracts/WadMath.sol)",
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "notice": "Arithmetic library with operations for fixed-point numbers.",
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "src/library/FixedPointMathLib.sol": "FixedPointMathLib"
+    },
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ]
+  },
+  "sources": {
+    "src/library/FixedPointMathLib.sol": {
+      "keccak256": "0x62c0c320c9e5da07780c3e4a46be978c483363460f8fa4796bfb87d3489e8313",
+      "license": "AGPL-3.0-only",
+      "urls": [
+        "bzz-raw://3e59a986365e9627cefd29ebe38fe20a694390baace618c4fe8a7a41d7fc7abf",
+        "dweb:/ipfs/QmaE1iLZwTEYpyTX9qJK5ruwCVPLttsSsSyPwmNaAdoNhu"
+      ]
+    }
+  },
+  "version": 1
+}

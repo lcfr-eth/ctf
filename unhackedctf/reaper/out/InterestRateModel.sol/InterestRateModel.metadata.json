@@ -1,0 +1,150 @@
+{
+  "compiler": {
+    "version": "0.8.11+commit.d7f03943"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "cash",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrows",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserves",
+            "type": "uint256"
+          }
+        ],
+        "name": "getBorrowRate",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "cash",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrows",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserves",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactorMantissa",
+            "type": "uint256"
+          }
+        ],
+        "name": "getSupplyRate",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "getBorrowRate(uint256,uint256,uint256)": {
+          "params": {
+            "borrows": "The total amount of borrows the market has outstanding",
+            "cash": "The total amount of cash the market has",
+            "reserves": "The total amount of reserves the market has"
+          },
+          "returns": {
+            "_0": "The borrow rate per block (as a percentage, and scaled by 1e18)"
+          }
+        },
+        "getSupplyRate(uint256,uint256,uint256,uint256)": {
+          "params": {
+            "borrows": "The total amount of borrows the market has outstanding",
+            "cash": "The total amount of cash the market has",
+            "reserveFactorMantissa": "The current reserve factor the market has",
+            "reserves": "The total amount of reserves the market has"
+          },
+          "returns": {
+            "_0": "The supply rate per block (as a percentage, and scaled by 1e18)"
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "getBorrowRate(uint256,uint256,uint256)": {
+          "notice": "Calculates the current borrow interest rate per block"
+        },
+        "getSupplyRate(uint256,uint256,uint256,uint256)": {
+          "notice": "Calculates the current supply interest rate per block"
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "src/interfaces/InterestRateModel.sol": "InterestRateModel"
+    },
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ]
+  },
+  "sources": {
+    "src/interfaces/InterestRateModel.sol": {
+      "keccak256": "0xc751fdf6e558d6d8a52b345d756fd44c864a7b7bdb320df4d569f2721fedea51",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://6f3333550032ff54210ab632039bb0e5f388ecfb99f0ec3a3f54d55c6af95a7d",
+        "dweb:/ipfs/QmdYRZXFiztvzCProiv7eB5fCDJBS6PmV3UQ7ns3WRShE6"
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,144 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "implementation()": "5c60da1b"
+  },
+  "ast": {
+    "absolutePath": "lib/openzeppelin-contracts-upgradeable/contracts/proxy/beacon/IBeaconUpgradeable.sol",
+    "id": 22531,
+    "exportedSymbols": {
+      "IBeaconUpgradeable": [
+        22530
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "93:368:12",
+    "nodes": [
+      {
+        "id": 22522,
+        "nodeType": "PragmaDirective",
+        "src": "93:23:12",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 22530,
+        "nodeType": "ContractDefinition",
+        "src": "198:262:12",
+        "nodes": [
+          {
+            "id": 22529,
+            "nodeType": "FunctionDefinition",
+            "src": "400:58:12",
+            "documentation": {
+              "id": 22524,
+              "nodeType": "StructuredDocumentation",
+              "src": "233:162:12",
+              "text": " @dev Must return an address that can be used as a delegate call target.\n {BeaconProxy} will check that this address is a contract."
+            },
+            "functionSelector": "5c60da1b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "implementation",
+            "nameLocation": "409:14:12",
+            "parameters": {
+              "id": 22525,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "423:2:12"
+            },
+            "returnParameters": {
+              "id": 22528,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22527,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22529,
+                  "src": "449:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 22526,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:7:12",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:9:12"
+            },
+            "scope": 22530,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IBeaconUpgradeable",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 22523,
+          "nodeType": "StructuredDocumentation",
+          "src": "118:79:12",
+          "text": " @dev This is the interface that {BeaconProxy} expects of its beacon."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          22530
+        ],
+        "name": "IBeaconUpgradeable",
+        "nameLocation": "208:18:12",
+        "scope": 22531,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 12
+}

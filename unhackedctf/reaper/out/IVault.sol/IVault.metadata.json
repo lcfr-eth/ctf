@@ -1,0 +1,183 @@
+{
+  "compiler": {
+    "version": "0.8.11+commit.d7f03943"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [],
+        "name": "availableCapital",
+        "outputs": [
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "shares",
+            "type": "uint256"
+          }
+        ],
+        "name": "convertToAssets",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "int256",
+            "name": "roi",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repayment",
+            "type": "uint256"
+          }
+        ],
+        "name": "report",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          }
+        ],
+        "name": "revokeStrategy",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          }
+        ],
+        "name": "strategies",
+        "outputs": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "activation",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "allocBPS",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "allocated",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "gains",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "losses",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastReport",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IVault.StrategyParams",
+            "name": "",
+            "type": "tuple"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "availableCapital()": {
+          "notice": "Called by a strategy to determine the amount of capital that the vault is able to provide it. A positive amount means that vault has excess capital to provide the strategy, while a negative amount means that the strategy has a balance owing to the vault."
+        },
+        "report(int256,uint256)": {
+          "notice": "This is the main contact point where the Strategy interacts with the Vault. It is critical that this call is handled as intended by the Strategy. Therefore, this function will be called by BaseStrategy to make sure the integration is correct."
+        },
+        "revokeStrategy(address)": {
+          "notice": "This function should only be used in the scenario where the Strategy is being retired but no migration of the positions are possible, or in the extreme scenario that the Strategy needs to be put into \"Emergency Exit\" mode in order for it to exit as quickly as possible. The latter scenario could be for any reason that is considered \"critical\" that the Strategy exits its position as fast as possible, such as a sudden change in market conditions leading to losses, or an imminent failure in an external dependency."
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "src/interfaces/IVault.sol": "IVault"
+    },
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ]
+  },
+  "sources": {
+    "src/interfaces/IVault.sol": {
+      "keccak256": "0xe8d6e08832ca0227615c7ae359f7c23df84c9baa223c716921209f413cbf1493",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://a486bac7d9a7b9b100ae97857e0ba06d4bcee3a2853143c9c82984d7a9508b40",
+        "dweb:/ipfs/QmfQXgci2S8Jx38Qh72fpLLASX2TfNg32vjbv4G5TtpmEH"
+      ]
+    }
+  },
+  "version": 1
+}
