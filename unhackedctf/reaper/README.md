@@ -1,4 +1,4 @@
-# solution - LCFR
+# solution - LCFR.eth
 
 wasted much time on trying to find a way to programatically read storage of balance mapping to do this automated. :(
 
